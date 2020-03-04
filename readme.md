@@ -27,7 +27,7 @@ number ^= 1 << x;
 ```
 That will toggle bit x.
 
-### Checking a bit
+#### Checking a bit
 
 To check a bit, shift the number x to the right, then bitwise AND it:
 ``` c
@@ -43,6 +43,10 @@ Setting the nth bit to either 1 or 0 can be achieved with the following:
 number ^= (-x ^ number) & (1 << n);
 ```
 Bit n will be set if x is 1, and cleared if x is 0.
+
+## Setting up GPIO pins
+
+__under construction__ 🙈
 
 
 ## GPIO Registers
@@ -143,6 +147,8 @@ GPIOA->BSRR = 0b0011000000000100; //lower 16 bits
 //Clear A2, A12, A13 (LOW)
 GPIOA->BRR = 0b0011000000000100; //lower 16 bits
 ```
+
+
 
 #### Sources:  
 * http://embedded-lab.com/blog/stm32-gpio-ports-insights/  
