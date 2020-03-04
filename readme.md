@@ -46,7 +46,7 @@ Bit n will be set if x is 1, and cleared if x is 0.
 
 ## Setting up GPIO pins
 
-![basic gpio setup registers](/gpio_setup_registers.png)
+![basic gpio setup registers](images/gpio_setup_registers.png)
 
 __under construction__ 🙈
 
@@ -67,7 +67,7 @@ where REG can be one of the following:
 **CRL** is used to set type/and or speed of pins 0-7 of the port. <br>
 Accessed as a 32 bit word, with 4 bits representing the state of each pin. Out of these 4 bits, the low 2 bits are MODE, and high 2 bits are CNF.
 
-![](/chr_crl_registers.png)
+![](images/chr_crl_registers.png)
 
 The 4 bits for each pin can be set to:  
 0b0011 (binary) or 0x3 (HEX) - Corresponds to setting pin as output, same as pinMode()  
@@ -176,9 +176,9 @@ GPIOA->BRR = 0b0011000000000100; //lower 16 bits
 * [Hello, Rust: Blinking LEDs in a New Language](https://vivonomicon.com/2019/05/23/hello-rust-blinking-leds-in-a-new-language/)
 * [Mastering STM32 (LeanPub Book)](https://leanpub.com/mastering-stm32)
 * STM32 Tutorial using HAL and FreeRTOS
-    * [GPIO Operations](/tutorial_01_gpio_operations.pdf)
-    * [PWM Generation](/tutorial_02_pwm_generation.pdf)
-    * [UART Communication](/tutorial_03_uart_communication)
-    * [I2C Module](/tutorial_04_i2c_module_pca9685.pdf)
-    * [SPI Module](/tutorial_06_spi_module_74hc595.pdf)
-    * [GPIO Interrupts](tutorial_07_gpio_interrupts_exti.pdf)
+    * [GPIO Operations](docs/tutorial_01_gpio_operations.pdf)
+    * [PWM Generation](docs/tutorial_02_pwm_generation.pdf)
+    * [UART Communication](docs/tutorial_03_uart_communication)
+    * [I2C Module](docs/tutorial_04_i2c_module_pca9685.pdf)
+    * [SPI Module](docs/tutorial_06_spi_module_74hc595.pdf)
+    * [GPIO Interrupts](docs/tutorial_07_gpio_interrupts_exti.pdf)
