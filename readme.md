@@ -46,6 +46,8 @@ Bit n will be set if x is 1, and cleared if x is 0.
 
 ## Setting up GPIO pins
 
+![basic gpio setup registers](/gpio_setup_registers.png)
+
 __under construction__ 🙈
 
 
@@ -65,7 +67,7 @@ where REG can be one of the following:
 **CRL** is used to set type/and or speed of pins 0-7 of the port. <br>
 Accessed as a 32 bit word, with 4 bits representing the state of each pin. Out of these 4 bits, the low 2 bits are MODE, and high 2 bits are CNF.
 
-![alt text](http://i.imgur.com/3cAnuq0.png "Logo Title Text 1")
+![](/chr_crl_registers.png)
 
 The 4 bits for each pin can be set to:  
 0b0011 (binary) or 0x3 (HEX) - Corresponds to setting pin as output, same as pinMode()  
@@ -150,10 +152,33 @@ GPIOA->BRR = 0b0011000000000100; //lower 16 bits
 ```
 
 
-
 #### Sources:  
 * http://embedded-lab.com/blog/stm32-gpio-ports-insights/  
 * http://hertaville.com/stm32f0-gpio-tutorial-part-1.html
 * http://stackoverflow.com/questions/47981/how-do-you-set-clear-and-toggle-a-single-bit-in-c-c?rq=1
 * https://gist.github.com/iwalpola/6c36c9573fd322a268ce890a118571ca
 * https://gist.github.com/Vitorbnc/e35f1ff1485d660edf365241dacfa387
+
+## Articles Worth Reading
+
+* "Bare Metal" STM32 Programming Series:
+    * [(Part 1): Hello, ARM!](https://vivonomicon.com/2018/04/02/bare-metal-stm32-programming-part-1-hello-arm/)
+    * [(Part 2): Making it to ‘Main’](https://vivonomicon.com/2018/04/20/bare-metal-stm32-programming-part-2-making-it-to-main/)
+    * [(Part 3): LEDs and Buttons!](https://vivonomicon.com/2018/04/22/bare-metal-stm32-programming-part-3-leds-and-buttons/)
+    * [(Part 3.5): Supporting Multiple Chips](https://vivonomicon.com/2018/04/25/bare-metal-stm32-programming-part-3-5-supporting-multiple-chips/)
+    * [(Part 4): Intro to Hardware Interrupts](https://vivonomicon.com/2018/04/28/bare-metal-stm32-programming-part-4-intro-to-hardware-interrupts/)
+    * [(Part 5): Timer Peripherals and the System Clock](https://vivonomicon.com/2018/05/20/bare-metal-stm32-programming-part-5-timer-peripherals-and-the-system-clock/)
+    * [(Part 6): Multitasking With FreeRTOS](https://vivonomicon.com/2018/08/23/bare-metal-stm32-programming-part-6-multitasking-with-freertos/)
+    * [(Part 7): Embedded C++ Inheritance](https://vivonomicon.com/2018/09/05/bare-metal-stm32-programming-part-7-embedded-c-inheritance/)
+    * [(Part 8): Learn to Debug Timing Issues with Neopixels](https://vivonomicon.com/2018/12/28/bare-metal-stm32-programming-part-8-learn-to-debug-timing-issues-with-neopixels/)
+    * [(Part 9): Fun With DMA](https://vivonomicon.com/2019/07/05/bare-metal-stm32-programming-part-9-dma-megamix/)
+
+* [Hello, Rust: Blinking LEDs in a New Language](https://vivonomicon.com/2019/05/23/hello-rust-blinking-leds-in-a-new-language/)
+* [Mastering STM32 (LeanPub Book)](https://leanpub.com/mastering-stm32)
+* STM32 Tutorial using HAL and FreeRTOS
+    * [GPIO Operations](/tutorial_01_gpio_operations.pdf)
+    * [PWM Generation](/tutorial_02_pwm_generation.pdf)
+    * [UART Communication](/tutorial_03_uart_communication)
+    * [I2C Module](/tutorial_04_i2c_module_pca9685.pdf)
+    * [SPI Module](/tutorial_06_spi_module_74hc595.pdf)
+    * [GPIO Interrupts](tutorial_07_gpio_interrupts_exti.pdf)
