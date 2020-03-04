@@ -49,6 +49,7 @@ Bit n will be set if x is 1, and cleared if x is 0.
 __under construction__ 🙈
 
 
+
 ## GPIO Registers
 
 The `stm32CubeIDE` generated code provides access to registers by the syntax:
