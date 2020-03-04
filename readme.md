@@ -151,6 +151,9 @@ GPIOA->BSRR = 0b0011000000000100; //lower 16 bits
 GPIOA->BRR = 0b0011000000000100; //lower 16 bits
 ```
 
+#### PUPDR - Pull-up/Pull-down Register
+
+__under construction 🙈__
 
 #### Sources:  
 * http://embedded-lab.com/blog/stm32-gpio-ports-insights/  
