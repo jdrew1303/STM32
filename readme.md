@@ -44,14 +44,6 @@ number ^= (-x ^ number) & (1 << n);
 ```
 Bit n will be set if x is 1, and cleared if x is 0.
 
-## Setting up GPIO pins
-
-![basic gpio setup registers](images/gpio_setup_registers.png)
-
-__under construction__ 🙈
-
-
-
 ## GPIO Registers
 
 The `stm32CubeIDE` generated code provides access to registers by the syntax:
@@ -151,9 +143,25 @@ GPIOA->BSRR = 0b0011000000000100; //lower 16 bits
 GPIOA->BRR = 0b0011000000000100; //lower 16 bits
 ```
 
+## Setting up GPIO pins
+
+![basic gpio setup registers](images/gpio_setup_registers.png)
+
+__under construction__ 🙈
+
 #### PUPDR - Pull-up/Pull-down Register
 
-__under construction 🙈__
+```cpp
+// clear registers (may not be approrpiate in all cases)
+GPIOX->PUPDR &= ~(0x3 << (2 * pinNumber))
+
+// pullType can be one of:
+// no pull-up or pull-down: 0x0
+// pull-up:                 0x1
+// pull-down:               0x2
+// reserved:                0x3
+GPIOX->PUPDR |= (pullType << (2 * pinNumber))
+```
 
 #### Sources:  
 * http://embedded-lab.com/blog/stm32-gpio-ports-insights/  
