@@ -1,3 +1,41 @@
+<p align="center">
+  <a name="brand" href="#">
+    <img src="images/nucleo_board_layout.png">
+  </a>
+</p>
+
+<p align="center">
+  <b><a href="#overview">Overview</a></b>
+  |
+  <b><a href="#features">Features</a></b>
+  |
+  <b><a href="#installation">Installation</a></b>
+  |
+  <b><a href="#credits">Credits</a></b>
+  |
+  <b><a href="#issues">Issues</a></b>
+</p>
+
+<br>
+
+<p align="center">
+  <!-- <a href="https://sqlast.herokuapp.com/"> 
+    <img src="https://sqlast.herokuapp.com/badge.svg" alt=" "> 
+  </a> -->
+  <!-- <a href="https://travis-ci.org/jdrew1303/sqlgenerate"> 
+    <img src="https://img.shields.io/travis/jdrew1303/sqlgenerate.svg?style=flat-square" alt=" "> 
+  </a> -->
+  <!-- <a href="./LICENSE"> 
+    <img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt=" "> 
+  </a> -->
+  <a href=""> 
+    <img src="https://img.shields.io/badge/platform-C%20%7C%20Cpp%20%7C%20Lua-808080.svg?style=flat-square" alt=" "> 
+  </a>
+  <a href="https://travis-ci.org/jdrew1303/sqltraverse"> 
+    <img src="https://img.shields.io/badge/documentation-below-green.svg?style=flat-square" alt=" "> 
+  </a>
+</p>
+
 ## STM32 GPIO Registers and Programming
 
 
@@ -172,6 +210,7 @@ GPIOX->PUPDR |= (pullType << (2 * pinNumber))
 
 ## Articles Worth Reading
 
+* [Using GCC and Makefiles on macOS to build STM32CubeMX projects](https://github.com/glegrain/STM32-with-macOS)
 * "Bare Metal" STM32 Programming Series:
     * [(Part 1): Hello, ARM!](https://vivonomicon.com/2018/04/02/bare-metal-stm32-programming-part-1-hello-arm/)
     * [(Part 2): Making it to ‘Main’](https://vivonomicon.com/2018/04/20/bare-metal-stm32-programming-part-2-making-it-to-main/)
