@@ -31,7 +31,7 @@
   <a href=""> 
     <img src="https://img.shields.io/badge/platform-C%20%7C%20Cpp%20%7C%20Lua-808080.svg?style=flat-square" alt=" "> 
   </a>
-  <a href="https://travis-ci.org/jdrew1303/sqltraverse"> 
+  <a href=""> 
     <img src="https://img.shields.io/badge/documentation-below-green.svg?style=flat-square" alt=" "> 
   </a>
 </p>
