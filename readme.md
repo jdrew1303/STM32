@@ -224,6 +224,7 @@ GPIOX->PUPDR |= (pullType << (2 * pinNumber))
     * [(Part 9): Fun With DMA](https://vivonomicon.com/2019/07/05/bare-metal-stm32-programming-part-9-dma-megamix/)
 
 * [Hello, Rust: Blinking LEDs in a New Language](https://vivonomicon.com/2019/05/23/hello-rust-blinking-leds-in-a-new-language/)
+* [Embedded Rust Documentation (It has a great intro to registers and memory issues in C/C++)](https://docs.rust-embedded.org/discovery/index.html)
 * [Mastering STM32 (LeanPub Book)](https://leanpub.com/mastering-stm32)
 * STM32 Tutorial using HAL and FreeRTOS
     * [GPIO Operations](docs/tutorial_01_gpio_operations.pdf)
